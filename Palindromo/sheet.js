@@ -3,28 +3,26 @@
 //chiedere una parola all'utente
 //var parola_utente = prompt('Inserisci una parola');
 
-var parola_utente = 'anna';
+var user_word = prompt('Inserisci una parola')
 
 //suddividere la parola in singole lettere
-var lettera = parola_utente.split('');
-console.log(lettera);
+var single_letter = user_word.split('');
+console.log(single_letter);
 
 //impostare una funzione per verificare se la parola generata è un Palindromo
 
-function palindromo(parola_utente) {
-    var parola_palindroma = '';
-    for (var i = parola_utente.lenght; i >= 0; i--) {
-        parola_palindroma += parola_utente
+function palindrome(user_word) {
+    var word_palindrome = '';
+    for (var i = user_word.length-1; i >= 0; i--) {
+        word_palindrome += user_word[i];
     }
-
-    return parola_palindroma;
+    return word_palindrome;
 }
+var result = palindrome(user_word);
+console.log(result);
 
-var risultato = palindromo(parola_utente);
-
-if (parola_utente == risultato) {
+if (result == user_word ) {
     console.log(' la parola è un palindromo');
-
 } else {
     console.log(' la parola non è un palindromo');
 }
