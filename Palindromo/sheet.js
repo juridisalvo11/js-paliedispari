@@ -3,7 +3,7 @@
 //chiedere una parola all'utente
 //var parola_utente = prompt('Inserisci una parola');
 
-var user_word = prompt('Inserisci una parola')
+var user_word = prompt('Inserisci una parola');
 
 //suddividere la parola in singole lettere
 var single_letter = user_word.split('');

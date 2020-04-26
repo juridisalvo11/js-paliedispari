@@ -11,14 +11,16 @@ var numero_pc = Math.floor(Math.random() * 5) +1;
 console.log(numero_pc);
 //sommare il numero utente con il numero del pc per verificare se il risultato sarà pari o dispari
 var somma_numeri = numero_utente + numero_pc;
+console.log(somma_numeri);
 //console.log(somma);
 //imposto una variabile per il resto
 var resto = somma_numeri % 2;
+console.log(resto);
 //comunico l'esito all'utente
-if ((resto == 0 && scelta_utente == 0)) {
-    console.log('la somma dei numeri è ' + somma_numeri + ' Hai vinto!');
-} else if ((resto == 0 && scelta_utente != 0)) {
-    console.log('la somma dei numeri è ' + somma_numeri + ' Hai vinto!');
+if ((resto == 0 && numero_utente == 0)) {
+    console.log('la somma dei numeri è pari ' + somma_numeri + ' Hai vinto!');
+} else if ((resto == 0 && numero_utente != 0)) {
+    console.log('la somma dei numeri è dispari ' + somma_numeri + ' Hai vinto!');
 } else {
-    console.log('la somma dei numeri è ' + somma_numeri + ' Hai perso!');
+    console.log( + somma_numeri + ' Hai perso!');
 }
